@@ -17,6 +17,86 @@
 				<img src="" alt="Sedona">
 		</div>		
 	</header>
+	<main class="page-content feedback">
+		<section class="page-promo">
+			<div class="page-promo__image">
+				<img src="" alt="">
+			</div>
+			<div class="page-promo__text">
+				<h1>ОСТАВЬТЕ СВОЙ ОТЗЫВ</h1>
+				<p>ПОМОГИТЕ НАШИМ ОТЕЛЯМ СТАТЬ ЛУЧШЕ! ОСТАВЬ ОТЗЫВ О НИХ, А ТАКЖЕ О ПОСЕЩЕННЫХ ВАМИ ДОСТОПРИМЕЧАТЕЛЬНОСТЯХ</p>
+			</div>
+		</section>
+		<section class="form">
+			<form action="http://...#" method="post" name="feedback-form">
+				<fieldset>
+					<legend>ПРЕДСТАВТЕСЬ, ПОЖАЛУЙСТА</legend>
+					<label for="first-name">ИМЯ:</label>
+					<input type="text" id="first-name">
 
+					<label for="last-name">ФАМИЛИЯ:</label>
+					<input type="text" id="last-name">
+
+					<label for="third-name">ОТЧЕСТВО:</label>
+					<input type="text" id="second-name">
+				</fieldset>
+
+				<fieldset>
+					<legend>КОНТАКТНАЯ ИНФОРМАЦИЯ</legend>
+					<label for="phone"> КОНТАКТНЫЙ ТЕЛЕФОН:</label><br>
+					<input type="tel" name="phone" id="phone">
+					<span class="input-error">Ошибка, перепроверьте номер</span>
+
+					<label for="mail">ЭЛЕКТРОННАЯ ПОЧТА:</label><br>
+					<input type="email" name="mail" id="mail">
+				</fieldset>
+
+				<fieldset>
+					<legend>ВАШЕ ОБЩЕЕ ВПЕЧАТЛЕНИЕ</legend>
+					<input type="radio" name="impression" id="good" value="option1">
+					<label for="good">Скорее положительно</label>
+
+					<input type="radio" name="impression" id="bad" value="option2">
+					<label for="bad">Скорее отрицательно</label>
+
+					<input type="radio" name="impression" id="not-sure" value="option3">
+					<label for="not-sure">Затрудняюсь ответить</label>
+				</fieldset>
+
+				<fieldset>
+					<legend>ПОСЕЩЕННЫЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ</legend>
+					<input type="checkbox" name="places" id="dev-bridge" value="option1">
+					<label for="dev-bridge">Мост Дьявола</label>
+
+					<input type="checkbox" name="places" id="slide-park" value="option2">
+					<label for="slide-park">Слайд-Парк</label>
+
+					<input type="checkbox" name="places" id="mountain" value="option3">
+					<label for="mountain">Гора Колокол</label>
+
+					<input type="checkbox" name="places" id="red-cliffs" value="option4" checked>
+					<label for="red-cliffs">Красные скалы</label>
+				</fieldset>
+
+				<fieldset>
+					<legend>ОПИШИТЕ ЭМОЦИИ</legend>
+					<textarea name="" id="" cols="30" rows="10"></textarea>
+				</fieldset>
+				<button class="btn btn--feedback" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
+			</form>
+		</section>
+	</main>
+	<footer class="page-footer">
+		<h2>#VISITSEDONA</h2>
+		<div class="socials">
+			<div class="socials__item socials__item--tw"></div>
+			<div class="socials__item socials__item--fb"></div>
+			<div class="socials__item socials__item--yo"></div>
+		</div>
+		<div class="developed-by">
+			<p>РАЗРАБОТАНО</p>
+			<img src="" alt="">
+		</div>	
+	</footer>
 </body>
 </html>
