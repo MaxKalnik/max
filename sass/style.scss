@@ -1,0 +1,142 @@
+@import "mixins.scss";
+@import "variables.scss";
+
+
+
+
+
+
+
+h1,h2,h3,h4,p {
+	margin: 0;
+	padding: 0;
+}
+.wrapper {
+	@include container();
+}
+
+
+
+/*MAIN-NAV*/
+.main-nav {
+	display: none;
+}
+
+/*PageHeader*/
+.page-header {
+	min-height: 445px;
+	@include outline();
+}
+@media (min-width: 768px) {
+	
+}
+@media (min-width: 1200px) {
+
+}
+
+/*MAIN*/
+
+/*PAGE PROMO*/
+.page-promo {
+	min-height: 610px;
+	@include outline-blue();
+} 
+
+
+
+
+
+
+
+/*FEATURES*/
+.features-item {
+	@include outline-blue();
+	@include clearfix();
+	&__text {
+		min-height: 195px;
+		@include outline();
+	}
+	&__img {
+		min-height: 260px;
+		@include outline();
+	}
+
+}
+.features-item--other {
+	&__text {
+		min-height: 170px;
+	}
+}
+
+.features-promo {
+	@include outline-blue();
+	&__item {
+		min-height: 165px;
+		@include outline();
+	}
+}
+
+@media (min-width: 768px) {
+	.features-item {
+		width: 1200px;
+	}
+	.features-item--first .features-item__text {
+		float: left;
+		width: 33.33%;
+		min-height: 256px;
+
+	}
+	.features-item--first .features-item__img {
+		float: right;
+		width: 66.66%;
+		min-height: 256px;
+	}
+	
+
+}
+
+@media (min-width: 1200px) {
+
+}
+
+
+
+
+
+
+
+/*USER ENROLL*/
+.user-enroll {
+	min-height: 240px;
+	@include outline-blue();
+
+}
+
+.btn--enroll {
+	display: block;
+	width: 280px;
+	margin: 0 auto;
+}
+@media (min-width: 768px) {
+
+}
+@media (min-width: 1200px) {
+
+}
+
+
+
+
+
+/*PAGE FOOTER*/
+.page-footer {
+	min-height: 240px;
+	@include outline();
+}
+
+@media (min-width: 768px) {
+
+}
+@media (min-width: 1200px) {
+
+}
