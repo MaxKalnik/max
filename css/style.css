@@ -50,8 +50,6 @@ h1, h2, h3, h4, p {
     outline: 1px solid red; }
 
 @media (min-width: 768px) {
-  .features-item {
-    width: 1200px; }
   .features-item--first .features-item__text {
     float: left;
     width: 33.33%;
@@ -59,7 +57,36 @@ h1, h2, h3, h4, p {
   .features-item--first .features-item__img {
     float: right;
     width: 66.66%;
-    min-height: 256px; } }
+    min-height: 256px; }
+  .features-promo {
+    font-size: 0;
+    content: "";
+    display: table;
+    clear: both; }
+  .features-promo__item {
+    display: inline-block;
+    vertical-align: top;
+    width: 33.3%;
+    font-size: 14px; }
+  .features-promo__item:nth-of-type(3) {
+    float: right; }
+  .features-item--second .features-item__text {
+    float: right;
+    width: 33.33%;
+    min-height: 256px; }
+  .features-item--second .features-item__img {
+    float: left;
+    width: 66.66%;
+    min-height: 256px; }
+  .features-other {
+    font-size: 0; }
+  .features-item--other {
+    display: inline-block;
+    width: 33.3%;
+    vertical-align: top;
+    font-size: 14px; }
+  .features-item--other:nth-of-type(3) {
+    float: right; } }
 
 /*USER ENROLL*/
 .user-enroll {
@@ -75,3 +102,27 @@ h1, h2, h3, h4, p {
 .page-footer {
   min-height: 240px;
   outline: 1px solid red; }
+
+.socials {
+  font-size: 0; }
+
+.socials__item {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  outline: 1px solid blue; }
+
+@media (min-width: 768px) {
+  .page-footer {
+    position: relative;
+    min-height: 120px;
+    padding-top: 40px; }
+  .socials {
+    position: absolute;
+    left: 50%;
+    top: 30px;
+    transform: translateX(-50%); }
+  .hash-teg {
+    float: left; }
+  .page-footer p {
+    float: right; } }
